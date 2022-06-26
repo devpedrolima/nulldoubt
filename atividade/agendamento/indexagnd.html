@@ -15,39 +15,54 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Null Doulbt</a>
             <ul class="navbar-nav navbar-top">
+
                 <li class="nav-item active">
+
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link dropdown-toggle" role="button" href="#!" id="dropdownExample" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Agendamento</a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownExample">
+                        <a class="dropdown-item" href="#">Agendar Atendimento</a>
+                    </div>
                 </li>
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" role="button" href="#!" id="dropdownExample" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Monitoria</a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownExample">
-                        <a class="dropdown-item" href="#">Monidores</a>
-                        <a class="dropdown-item" href="#">Cadastrar Horário</a>
-                    </div>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" role="button" href="#!" id="dropdownExample" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Atendimento</a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownExample">
-                        <a class="dropdown-item" href="#">Agendamento</a>
-                        <a class="dropdown-item" href="#">Fazer Chamada</a>
+                        <a class="dropdown-item" href="#">Agendar Monitoria</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" role="button" href="#!" id="dropdownExample" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Histórico</a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownExample">
-                        <a class="dropdown-item" href="#">Históricos simples</a>
-                        <a class="dropdown-item" href="#">Históricos Completos</a>
+                        <a class="dropdown-item" href="#">Histórico de Atendimentos</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" href="#!" id="dropdownExample" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Selecionar Período</a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownExample">
+                        <a class="dropdown-item" href="#">1° Período </a>
+                        <a class="dropdown-item" href="#">2° Período </a>
+                        <a class="dropdown-item" href="#">3° Período </a>
+                        <a class="dropdown-item" href="#">4° Período </a>
+                        <a class="dropdown-item" href="#">5° Período </a>
+                        <a class="dropdown-item" href="#">6° Período </a>
+                        <a class="dropdown-item" href="#">7° Período </a>
+                        <a class="dropdown-item" href="#">8° Período </a>
+
                     </div>
                 </li>
             </ul>
 
             <button class="navbar-toggler navbar-toggler-right navbar-icon" type="button" data-toggle="collapse" data-target="#navbar-mobile" aria-controls="navbar-mobile" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="icon-bar bar1"></span>
-            <span class="icon-bar bar2"></span>
-            <span class="icon-bar bar3"></span>
-        </button>
+                <span class="icon-bar bar1"></span>
+                <span class="icon-bar bar2"></span>
+                <span class="icon-bar bar3"></span>
+            </button>
             <div class="navbar-collapse collapse ml-auto" id="navbar-mobile">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-image">
@@ -55,36 +70,196 @@
                         <a href="#!" class="nav-link">Meu perfil</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#!" class="nav-link"></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#!" class="nav-link">Link</a>
+                        <a href="#!" class="nav-link">Configurações</a>
+                        <a href="#!" class="nav-link">Mudar Senha</a>
+                        <a href="#!" class="nav-link">Logout </a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+
     <div class="wrapper mt-4">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="jumbotron">
-                        <h1>Agendamento para Monitoria</h1>
+            <div class="card">
+                <div class="form__name">
+                    Agendamento de Atendimento
+                </div>
+                <div class="time__container">
+                    <div class="section">
+                        <div class="box">
+                            1
+
+                        </div><span>Dados Pessoais</span>
                     </div>
+                    <form action="" class="form__contact">
+                        <div class="cname">
+                            <label for="cname">Nome</label> <input placeholder="Igor 3k" id="cname" type="text">
+                        </div>
+                        <div class="cnum">
+                            <label for="cnum">Numero da Matrícula</label> <input id="cnum" type="text">
+                        </div>
+                        <div class="email">
+                            <label for="cemail">Email academico</label> <input placeholder="pl@estudante.ifgoiano.edu.br" id="cemail" type="email">
+                        </div>
+                    </form>
+                    <form action="" class="form__time">
+
+                </div>
+                <div class="message__container">
+                    <div class="section">
+                        <div class="box">
+                            2
+                        </div><span>Horário</span>
+                    </div>
+                    <form action="" class="form__contact">
+                        <div class="date">
+                            <label for="date">Data</label> <input id="date" type="date">
+                        </div>
+                        <div class="time">
+                            <label for="time">Hora</label> <input id="time" type="time">
+                        </div>
+                        <!------
+                        <div class="timezone">
+                            <label for="timezone">Timezone</label> <select name="timezone">
+                                    <option value="-12">
+                                        (GMT -12:00) Eniwetok, Kwajalein
+                                    </option>
+                                    <option value="-11">
+                                        (GMT -11:00) Midway Island, Samoa
+                                    </option>
+                                    <option value="-10">
+                                        (GMT -10:00) Hawaii
+                                    </option>
+                                    <option value="-9">
+                                        (GMT -9:00) Alaska
+                                    </option>
+                                    <option value="-8">
+                                        (GMT -8:00) Pacific Time (US &amp; Canada)
+                                    </option>
+                                    <option value="-7">
+                                        (GMT -7:00) Mountain Time (US &amp; Canada)
+                                    </option>
+                                    <option value="-6">
+                                        (GMT -6:00) Central Time (US &amp; Canada),
+                                        Mexico City
+                                    </option>
+                                    <option value="-5">
+                                        (GMT -5:00) Eastern Time (US &amp; Canada),
+                                        Bogota, Lima
+                                    </option>
+                                    <option value="-4.5">
+                                        (GMT -4:30) Caracas
+                                    </option>
+                                    <option value="-4">
+                                        (GMT -4:00) Atlantic Time (Canada), La Paz,
+                                        Santiago
+                                    </option>
+                                    <option value="-3.5">
+                                        (GMT -3:30) Newfoundland
+                                    </option>
+                                    <option value="-3">
+                                        (GMT -3:00) Brazil, Buenos Aires, Georgetown
+                                    </option>
+                                    <option value="-2">
+                                        (GMT -2:00) Mid-Atlantic
+                                    </option>
+                                    <option value="-1">
+                                        (GMT -1:00 hour) Azores, Cape Verde Islands
+                                    </option>
+                                    <option selected="selected" value="0">
+                                        (GMT) Western Europe Time, London, Lisbon,
+                                        Casablanca, Greenwich
+                                    </option>
+                                    <option value="1">
+                                        (GMT +1:00 hour) Brussels, Copenhagen, Madrid,
+                                        Paris
+                                    </option>
+                                    <option value="2">
+                                        (GMT +2:00) Kaliningrad, South Africa, Cairo
+                                    </option>
+                                    <option value="3">
+                                        (GMT +3:00) Baghdad, Riyadh, Moscow, St.
+                                        Petersburg
+                                    </option>
+                                    <option value="3.5">
+                                        (GMT +3:30) Tehran
+                                    </option>
+                                    <option value="4">
+                                        (GMT +4:00) Abu Dhabi, Muscat, Yerevan, Baku,
+                                        Tbilisi
+                                    </option>
+                                    <option value="4.5">
+                                        (GMT +4:30) Kabul
+                                    </option>
+                                    <option value="5">
+                                        (GMT +5:00) Ekaterinburg, Islamabad, Karachi,
+                                        Tashkent
+                                    </option>
+                                    <option value="5.5">
+                                        (GMT +5:30) Mumbai, Kolkata, Chennai, New Delhi
+                                    </option>
+                                    <option value="5.75">
+                                        (GMT +5:45) Kathmandu
+                                    </option>
+                                    <option value="6">
+                                        (GMT +6:00) Almaty, Dhaka, Colombo
+                                    </option>
+                                    <option value="6.5">
+                                        (GMT +6:30) Yangon, Cocos Islands
+                                    </option>
+                                    <option value="7">
+                                        (GMT +7:00) Bangkok, Hanoi, Jakarta
+                                    </option>
+                                    <option value="8">
+                                        (GMT +8:00) Beijing, Perth, Singapore, Hong
+                                        Kong
+                                    </option>
+                                    <option value="9">
+                                        (GMT +9:00) Tokyo, Seoul, Osaka, Sapporo,
+                                        Yakutsk
+                                    </option>
+                                    <option value="9.5">
+                                        (GMT +9:30) Adelaide, Darwin
+                                    </option>
+                                    <option value="10">
+                                        (GMT +10:00) Eastern Australia, Guam,
+                                        Vladivostok
+                                    </option>
+                                    <option value="11">
+                                        (GMT +11:00) Magadan, Solomon Islands, New
+                                        Caledonia
+                                    </option>
+                                    <option value="12">
+                                        (GMT +12:00) Auckland, Wellington, Fiji,
+                                        Kamchatka
+                                    </option>
+                        </select>
+                </div>
+                </form> --->
+
+
+                        <div class="section">
+                            <div class="box">
+                                3
+                            </div><span>Mensagem</span>
+                        </div>
+                        <textarea placeholder="Deixe sua mensagem, dúvida entre outros...." cols="50" rows="5"></textarea>
                 </div>
 
-                <div class="wrapper mt-4">
+            </div>
+            <div class="form__confirmation">
+                <button>Confirmar Agendamento </button>
+            </div>
+        </div>
+    </div>
 
-                    <div class="container">
-
-                    </div>
-
-                </div>
-                <!-- partial -->
-                <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-                <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js'></script>
-                <script src="./script.js"></script>
+    </div>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js'></script>
+    <script src="./script.js"></script>
 
 </body>
 
